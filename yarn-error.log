@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\hamza\cmder\bin;C:\Users\hamza\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\hamza\cmder\vendor\conemu-maximus5;C:\Users\hamza\cmder\vendor\conemu-maximus5\ConEmu;C:\PROGRAM FILES (X86)\EMBARCADERO\STUDIO\17.0\BIN;C:\USERS\PUBLIC\DOCUMENTS\EMBARCADERO\STUDIO\17.0\BPL;C:\PROGRAM FILES (X86)\EMBARCADERO\STUDIO\19.0\BIN;C:\USERS\PUBLIC\DOCUMENTS\EMBARCADERO\STUDIO\19.0\BPL;C:\PROGRAM FILES (X86)\EMBARCADERO\STUDIO\19.0\BIN64;C:\USERS\PUBLIC\DOCUMENTS\EMBARCADERO\STUDIO\19.0\BPL\WIN64;C:\PROGRAMDATA\ORACLE\JAVA\JAVAPATH;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\GIT\CMD;C:\Users\hamza\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\WINDOWS\SYSTEM32\OPENSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\PROGRAM FILES (X86)\EMBARCADERO\STUDIO\17.0\BIN;C:\USERS\PUBLIC\DOCUMENTS\EMBARCADERO\STUDIO\17.0\BPL;C:\PROGRAM FILES (X86)\EMBARCADERO\STUDIO\19.0\BIN;C:\USERS\PUBLIC\DOCUMENTS\EMBARCADERO\STUDIO\19.0\BPL;C:\PROGRAM FILES (X86)\EMBARCADERO\STUDIO\19.0\BIN64;C:\USERS\PUBLIC\DOCUMENTS\EMBARCADERO\STUDIO\19.0\BPL\WIN64;C:\PROGRAM FILES (X86)\COMMON FILES\ORACLE\JAVA\JAVAPATH;C:\PROGRAMDATA\ORACLE\JAVA\JAVAPATH;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\GIT\CMD;C:\Users\hamza\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\WINDOWS\SYSTEM32\OPENSSH\;C:\PROGRAM FILES (X86)\SKYPE\PHONE\;C:\Program Files\Git\cmd;C:\Users\hamza\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Bandizip\;C:\Users\hamza\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\hamza\git\flutter\bin;C:\Users\hamza\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hamza\AppData\Local\GitHubDesktop\bin;C:\Program Files\Sublime Text 3;C:\Users\hamza\cmder;C:\Users\hamza\AppData\Roaming\npm;C:\Users\hamza\AppData\Local\Yarn\bin;C:\Program Files\Git\mingw64;C:\Program Files\Git\usr\bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  10.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:120807:13)
+      at Interface.emit (events.js:182:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:182:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:283:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
