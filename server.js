@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyparser = require('body-parser');
 const moment = require('moment');
+const bcrypt = require('bcrypt-nodejs');
 
 const app = express();
 app.use(bodyparser.json());
@@ -32,6 +33,12 @@ app.get('/', (req, res) =>{
 
 //singin
 app.post('/singin', (req, res) =>{
+    bcrypt.compare("123", '$2a$10$heorWHjQaiYwMq1T0aNSuu5oqx77iNtWswkHv8r0rzw7Rvv7Pm0W2', function(err, res) {
+        console.log('First guess: ', res);
+    });
+    bcrypt.compare("veggies", '$2a$10$heorWHjQaiYwMq1T0aNSuu5oqx77iNtWswkHv8r0rzw7Rvv7Pm0W2', function(err, res) {
+        console.log('Second guess: ', res);
+    });
     if(req.body.email === database.users[0].email &&
     req.body.password === database.users[0].password){
         res.json('success');
@@ -43,7 +50,10 @@ app.post('/singin', (req, res) =>{
 
 //register
 app.post('/register', (req, res) =>{
-    const { email, name, password} = req.body
+    const { email, name, password} = req.body;
+    bcrypt.hash(password, null, null, function(err, hash) {
+        console.log(hash);
+    });
     database.users.push({
             id: '125',
             name: name,
