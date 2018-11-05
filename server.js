@@ -2,9 +2,11 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const moment = require('moment');
 const bcrypt = require('bcrypt-nodejs');
+const cors = require('cors');
 
 const app = express();
 app.use(bodyparser.json());
+app.use(cors());
 
 const database = {
     users: [
@@ -31,19 +33,13 @@ app.get('/', (req, res) =>{
     res.send(database.users)
 })
 
-//singin
-app.post('/singin', (req, res) =>{
-    bcrypt.compare("123", '$2a$10$heorWHjQaiYwMq1T0aNSuu5oqx77iNtWswkHv8r0rzw7Rvv7Pm0W2', function(err, res) {
-        console.log('First guess: ', res);
-    });
-    bcrypt.compare("veggies", '$2a$10$heorWHjQaiYwMq1T0aNSuu5oqx77iNtWswkHv8r0rzw7Rvv7Pm0W2', function(err, res) {
-        console.log('Second guess: ', res);
-    });
+//signin
+app.post('/signin', (req, res) =>{
     if(req.body.email === database.users[0].email &&
     req.body.password === database.users[0].password){
         res.json('success');
     } else {
-        res.status(400,).json('error logging in!')
+        res.status(404,).json('error logging in!')
     }
 })
 
@@ -77,7 +73,7 @@ app.get('/profile/:id', (req, res) =>{
         } 
     })
     if(!found){
-        res.status(400).json('not found')
+        res.status(404).json('not found')
     }
 })
 
@@ -93,7 +89,7 @@ app.put('/image', (req, res) => {
         } 
     })
     if(!found){
-        res.status(400).json('not found')
+        res.status(404).json('not found')
     }
 
 })
