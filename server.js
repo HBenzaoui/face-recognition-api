@@ -3,9 +3,10 @@ const bodyparser = require('body-parser');
 const moment = require('moment');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
+const knex = require('knex');
 
 
-const knex = require('knex')({
+const pg = knex({
     client: 'pg',
     connection: {
         host:'127.0.0.1',
@@ -14,6 +15,8 @@ const knex = require('knex')({
         database:'facrec',
     }
 });
+
+console.log(pg.select('*').from('users'));
 
 const app = express();
 app.use(bodyparser.json());
