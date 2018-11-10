@@ -17,6 +17,6 @@
     "pg": "^7.6.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.5"
+    "nodemon": "^1.18.6"
   }
 }
