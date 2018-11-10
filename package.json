@@ -1,9 +1,10 @@
 {
   "name": "FaceRecognition-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "script.js",
   "license": "MIT",
   "scripts": {
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
