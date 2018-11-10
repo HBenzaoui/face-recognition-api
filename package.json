@@ -18,5 +18,16 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HBenzaoui/face-recognition-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/HBenzaoui/face-recognition-api/issues"
+  },
+  "homepage": "https://github.com/HBenzaoui/face-recognition-api#readme",
+  "description": ""
 }
