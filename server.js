@@ -34,6 +34,7 @@ app.post('/register', (req , res) => { register.handleRegister(req, res ,db, bcr
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db)})
 //Images
 app.put('/image', (req, res) => { image.handleImage(req, res, db)})
+app.post('/imageUrl', (req, res) => { image.handleAPICall(req, res)})
 
 app.listen(3000, () =>{
     console.log('app is runnig on post 3000')
